@@ -2,4 +2,10 @@
 "C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\sn.exe" -k lckey.snk
 "C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\sn.exe" -p lckey.snk lcpublic.out
 "C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\sn.exe" -t lcpublic.out
+--
+-- gacutil
+-- register
+"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\gacutil.exe" -if "C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Tasks\ExecuteCatalogPackageTaskNotes.dll"
+-- unregister
+"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\gacutil.exe" -u ExecuteCatalogPackageTaskNotes 
 
